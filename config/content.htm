@@ -8,7 +8,7 @@
 <h1>Note</h1>
 <h2>Wink</h2>
 <p><span></span></p>
-<p><span>Google尋找 </span><span style="background-color: #cc99ff;"><strong>debugmode wink</strong></span><strong>wink</strong></p>
+<p><span>Google尋找 </span><span style="background-color: #cc99ff;"><strong>debugmode wink</strong></span></p>
 <p><span><img alt="" height="1078" src="/images/debugmode wink - Google 搜尋 - Google Chrome 2021_11_22 上午 11_12_10.png" width="1920"/></span></p>
 <p><span></span></p>
 <p><span>打開 <strong>winksetup</strong><span>，點選<span> </span></span><strong>I Agree</strong></span></p>
@@ -18,7 +18,26 @@
 <p><span><strong><img alt="" height="324" src="/images/DebugMode Wink™ Setup_ License Agreement 2021_11_22 上午 11_00_48.png" width="490"/></strong></span></p>
 <p><strong>在隨身碟中找尋Data/Wink資料夾/打開Wink，就可以開始製作影片了<img alt="" height="1079" src="/images/Wink 2021_11_22 上午 11_42_11.png" width="1920"/></strong></p>
 <p>安裝影片<iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/EH60a7UDUFg" width="560"></iframe></p>
-<p><span><strong></strong></span></p>
+<p>到老師的Wink影片複製原始碼143-152行</p>
+<p><span><strong><img alt="" height="1030" src="/images/cad2021 homework site - Google Chrome 2021_12_13 上午 10_52_13.png" width="1920"/></strong></span></p>
+<p>貼在<strong>Source code</strong></p>
+<p><span><strong><img alt="" height="1030" src="/images/cad2021 homework site - Google Chrome 2021_12_13 上午 10_53_27.png" width="1920"/></strong></span></p>
+<p>開啟影片原始碼 複製11-26行 貼在<strong>Source code</strong></p>
+<p>修改內容</p>
+<p><span><strong>在<span style="background-color: #00ff00;">&lt;div class="winkVideoContainerClass"&gt;<span style="background-color: #ffffff;">後面加上</span></span><span style="background-color: #00ffff;">&lt;video width="960" height="540"</span></strong></span><span style="background-color: #ffffff;"> (影片的尺寸)</span></p>
+<p><strong><span style="background-color: #00ff00;">data-dirname="</span><span style="background-color: #33cccc;">/static<span style="background-color: #00ff00;">"</span><span style="background-color: #ffffff;">&lt;/</span></span>video&gt;</strong><br/><strong></strong></p>
+<p><strong><span style="background-color: #00ff00;">&lt;source src="<span style="background-color: #00ffff;">/downloads/</span>wink 4.mp4"</span></strong></p>
+<p><img alt="" height="1030" src="/images/cad2021 homework site - Google Chrome 2021_12_13 上午 11_15_17.png" width="1920"/></p>
+<p><span><strong>將影片放進 <strong>downloads<span> </span></strong><span>裡 複製MP4檔<img alt="" height="1030" src="/images/桌面 2021_12_13 上午 10_57_27.png" width="1920"/></span></strong></span></p>
+<p>貼上到data/tmp/cad2021_hw/download裡</p>
+<p><img alt="" height="1030" src="/images/桌面 2021_12_13 上午 10_58_09.png" width="1920"/></p>
+<p><span><strong><img alt="" height="1030" src="/images/w.htm - 個人 - Microsoft Edge 2021_12_13 上午 10_55_25.png" width="1920"/></strong></span></p>
+<p>將複製下來的原始碼貼在 <strong>Source code</strong></p>
+<p>並且修改</p>
+<p><span><strong>&lt;video width="960" height="540"</strong></span> (影片的尺寸)</p>
+<p><strong>data-dirname="<span>/static</span>" data-varname="winkVideoData" video=""&gt;</strong><br/><strong></strong></p>
+<p><strong>&lt;source src="<span>/downloads/</span>wink 4.mp4"</strong></p>
+<p><strong></strong></p>
 <p><span><strong></strong></span>wink上傳方式</p>
 <div class="winkVideoContainerClass">
 <div class="winkVideoOverlayClass"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/obFseLNdLXM" width="560"></iframe></div>
@@ -42,8 +61,7 @@ var winkVideoData = {
 };
 </script>
 <div class="winkVideoContainerClass"><video class="winkVideoClass" data-dirname="/static" data-varname="winkVideoData" height="540" video="" width="960">
-<source src="/downloads/w.mp4" type="video/mp4"/>
-</video>
+<source src="/downloads/w.mp4" type="video/mp4"/></video>
 <div class="winkVideoOverlayClass"></div>
 <div class="winkVideoControlBarClass"><button class="winkVideoControlBarPlayButtonClass"></button> <button class="winkVideoControlBarPauseButtonClass"></button>
 <div class="winkVideoControlBarProgressLeftClass"></div>
