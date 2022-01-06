@@ -281,17 +281,25 @@ end</pre>
 <p><a href="https://mde.tw/cad2021/content/Task7.html">https://mde.tw/cad2021/content/Task7.html</a></p>
 <p>請從上列 Tasks 中自行選擇項目內容完成 HW3.</p>
 <h1>Final Project</h1>
-<p>Final Project 佔學期成績 40%</p>
-<p><span style="background-color: #ffff99;">2a 與 2b 必須在 2022.01.06 上課之前完成 Final Project</span></p>
-<p><a href="https://github.com/mdecourse/cad2021/discussions/8">Final Project 具體項目成果回報區</a>將於 2021.12.09 開啟, 於 <span style="background-color: #ff99cc;">2022.01.05 22:00 關閉</span></p>
-<p>彈性製造系統場景設計與製作</p>
-<p>請從 <a href="https://github.com/mdecourse/scenes">https://github.com/mdecourse/scenes</a> 與 <a href="https://github.com/mdecourse/models">https://github.com/mdecourse/models</a> 中選擇場景或模型, 配合 <a href="https://drive.google.com/file/d/1xb1Es8N-FxeG10OSnLNDwwi_tXyNTP9t/view?usp=sharing">cad2021_textbook.pdf</a> (登入 @gm 帳號後下載) 教材中的內容, 自選製作與組立產品, 組合成一個 Flexible Manufacturing System 系統場景.</p>
-<p>彈性製造系統內容說明</p>
-<h4>範例:</h4>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/2qc0-yTXBts" title="YouTube video player" width="560"></iframe></p>
-<p><br/><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/PDSmRPh6TaM" title="YouTube video player" width="560"></iframe></p>
-<p></p>
-<h1>週進度</h1>
+<h4><span>SolveSpace介紹</span></h4>
+<p><span><span>本項目基於SolveSpace，從2.30版本開始進行代碼重構、修改編譯腳本（只保留Win32支持性）。</span><span>在完成整體漢化工作的基礎之上，有選擇的吸取了原版從2.30至3.0之間的部分補丁，計劃從當前代碼形成全新的項目脫離原項目，根據國內的需求繼續開發。</span></span></p>
+<p><span><span>由於近期反盜版聲勢浩大，許多公司不得不選擇購買正版3D CAD 設計軟件來維持工作， 因此造成很多企業事業單位工作遲滯。</span><span>在這種環境下，SolveSpace 作為開源界一款優秀的3D CAD/CAM 設計軟件，還是應當得到重視.</span></span></p>
+<p><span><span>當前初始提交的版本是基於SolveSpace 2.3 老版本代碼基礎進行修改、漢化的，由於最新官方版SolveSpace 3.0 已經開始趨於臃腫和性能降低、運行卡頓遲滯，因而我們選擇了從作者的初心2.3 版本代碼開始修改。</span><span>在漢化之後，又對後續持續到3.0 版本過程中原作者及其餘開源開發工作參與者進行的各種補丁和改進進行了吸收，捨棄了後續Angle 等庫的引入內容以保持原有的圖形顯示性能。</span><span>同時針對自己使用中遇到的一些程序bug 等問題進行了大量修復和優化。</span></span></p>
+<p><span><span>項目當前的工作計劃，是持續對代碼進行研究、除錯、優化工作，歡迎大家進行Pull Request 和Issue/Request 提交。</span><span>本人期望能拋磚引玉，歡迎大家一同來發現問題、解決問題，提交新的功能和需求，讓本項目在中國生根發芽，形成國產3D CAD 開源軟件的先河。</span></span></p>
+<h4><a class="anchor" href="https://gitee.com/crowraven/SolveSpace#%E5%8A%9F%E8%83%BD%E7%89%B9%E6%80%A7" id="user-content-功能特性"></a><span><span>功能特性</span></span></h4>
+<ol>
+<li><span><span>基於數學原理的實時運動求解系統</span></span></li>
+<li><span><span>尺寸驅動的參數化二維草圖系統</span></span></li>
+<li><span><span>基於尺寸和約束的參數化裝配系統</span></span></li>
+<li><span><span>實時動態運動仿真功能</span></span></li>
+<li><span><span>PNG預覽圖形導出能力</span></span></li>
+<li><span><span>二維圖紙DXF/DWG 格式的導入、導出能力</span></span></li>
+<li><span><span>二維圖紙PDFSTEP/HGPL/G代碼/PostScript/SVG 格式的導出能力</span></span></li>
+<li><span><span>支持STL/HTML/VRML/STEP 三維網格導出能力</span></span></li>
+<li><span><span>運動軌蹟的捕捉、繪製、數據導出</span></span></li>
+<li><span><span>距離/體積/面積/重心的測量能力</span></span></li>
+</ol>
+<p></p><h1>週進度</h1>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
